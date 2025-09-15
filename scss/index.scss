@@ -155,7 +155,13 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #666;
+  transition: all .3s linear;
+  &:hover {
+    background-color: v.$gold;
+    color: #fff;
+  }
 }
+
 
 .icon {
   width: 30px;

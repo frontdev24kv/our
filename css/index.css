@@ -267,6 +267,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #666;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: #fc0;
+  color: #fff;
 }
 
 .icon {
