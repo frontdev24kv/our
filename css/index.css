@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type=file] {
+  max-width: 100%;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+}
+
+body {
+  padding: 122px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  width: 450px;
+  margin: 0 auto 40px;
+}
+.header__subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #898f8f;
+  margin-bottom: 15px;
+}
+.header__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fc0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fc0;
+  width: 450px;
+}
+.header__box {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -5px;
+  margin: 5px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.image {
+  width: 50%;
+  padding: 65px 85px;
+  padding-left: 70px;
+}
+.image__box {
+  padding: 15px;
+  border: 1px solid #fc0;
+  position: relative;
+}
+.image__box_white {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+.image__box img {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.content {
+  width: 50%;
+  border-left: 1px solid #fc0;
+  padding: 70px;
+  padding-left: 85px;
+}
+.content__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+  position: relative;
+}
+.content__title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: #fc0;
+  bottom: -30px;
+  left: calc(50% - 50px);
+}
+.content__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-transform: capitalize;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+.content__desc {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+.content__decor {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+.social__link {
+  color: #ccc;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #fc0;
+  padding: 5px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #666;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: #ccc;
+  stroke: #ccc;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: rgb(82, 156, 38);
+}/*# sourceMappingURL=index.css.map */
